@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A nature and wildlife photo gallery by Caine Wesley Francisco.">
+    <title>Portfolio | Personal Portfolio</title>
+    <link rel="stylesheet" href="assets/css/portfolio-custom.css">
+</head>
+
+<body>
+    <div class="site-shell">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+            <a class="brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">🦅</span>
+                <span class="brand-name">
+                    MY WEBSITE
+                    <small>PERSONAL PORTFOLIO</small>
+                </span>
+            </a>
+
+            <button class="mobile-menu" type="button"
+                onclick="document.getElementById('sidebar').classList.toggle('open')">
+                MENU
+            </button>
+
+            <nav aria-label="Main navigation">
+                <p class="nav-label">Navigation</p>
+
+                <ul class="nav-list">
+                    <li><a href="index.html"><span class="nav-index">01</span> Home</a></li>
+                    <li><a class="active" href="portfolio.html"><span class="nav-index">02</span> Portfolio</a></li>
+                    <li><a href="about.html"><span class="nav-index">03</span> About me</a></li>
+                    <li><a href="contact.html"><span class="nav-index">04</span> Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a class="email-mini" href="mailto:franciscocainewesley@gmail.com">
+                    franciscocainewesley@gmail.com
+                </a>
+                <p>&copy; 2026 Caine Wesley Francisco</p>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+
+            <div class="topline">
+                <span>Personal portfolio / Gallery</span>
+                <span class="status">Nature collection</span>
+            </div>
+
+            <header class="page-intro gallery-intro">
+                <span class="eyebrow">MY COLLECTION</span>
+
+                <h1>
+                    Photo gallery
+                    <span style="color: var(--maroon)">.</span>
+                </h1>
+
+                <p>
+                    A collection of nature photographs featuring trees,
+                    wildlife, plants, and other parts of the natural world.
+                </p>
+            </header>
+
+            <!-- GALLERY SECTION -->
+            <section class="gallery-section" aria-label="Photo gallery">
+
+                <!-- CATEGORY FILTERS -->
+                <div class="gallery-toolbar">
+                    <div class="filter-list" role="group" aria-label="Filter gallery by category">
+
+                        <button class="filter-button active" data-filter="all"
+                            aria-pressed="true" type="button">All</button>
+
+                        <button class="filter-button" data-filter="trees"
+                            aria-pressed="false" type="button">Trees</button>
+
+                        <button class="filter-button" data-filter="birds"
+                            aria-pressed="false" type="button">Birds <span>9</span></button>
+
+                        <button class="filter-button" data-filter="fishes"
+                            aria-pressed="false" type="button">Fishes</button>
+
+                        <button class="filter-button" data-filter="fruits"
+                            aria-pressed="false" type="button">Fruits</button>
+
+                        <button class="filter-button" data-filter="flowers"
+                            aria-pressed="false" type="button">Flowers</button>
+
+                        <button class="filter-button" data-filter="mammals"
+                            aria-pressed="false" type="button">Mammals <span>7</span></button>
+
+                        <button class="filter-button" data-filter="animals"
+                            aria-pressed="false" type="button">Animals</button>
+
+                        <button class="filter-button" data-filter="plants"
+                            aria-pressed="false" type="button">Plants</button>
+
+                    </div>
+
+                    <p class="gallery-count" id="gallery-count" aria-live="polite">
+                        Showing all photographs
+                    </p>
+                </div>
+
+                <!-- GALLERY IMAGES -->
+                <div class="gallery-grid" id="gallery-grid">
+
+                    <!-- TREES -->
+                    <article class="gallery-card trees plants">
+                        <a class="gallery-image" href="assets/img/trees/istockphoto-2160416603-612x612.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/trees/istockphoto-2160416603-612x612.jpg" alt="Majestic green tree with lush branches" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Majestic Green Tree</strong>
+                            <span>Trees</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card trees plants">
+                        <a class="gallery-image" href="assets/img/trees/pexels-denis-mustafaev-143461191-33959013.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/trees/pexels-denis-mustafaev-143461191-33959013.jpg" alt="Pine trees at sunset" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Pine Trees</strong>
+                            <span>Trees</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card trees plants">
+                        <a class="gallery-image" href="assets/img/trees/Usamljeni_jasen_-_panoramio_(cropped).jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/trees/Usamljeni_jasen_-_panoramio_(cropped).jpg" alt="Lonely ash tree in a field" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Lonely Ash Tree</strong>
+                            <span>Trees</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card trees plants">
+                        <a class="gallery-image" href="assets/img/trees/matthew-smith-rFBA42UFpLs-unsplash.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/trees/matthew-smith-rFBA42UFpLs-unsplash.jpg" alt="Photo by Matthew Smith" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Photo by Matthew Smith</strong>
+                            <span>Trees</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card trees plants">
+                        <a class="gallery-image" href="assets/img/trees/spencer-watson-dEOC8M_lmxI-unsplash.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/trees/spencer-watson-dEOC8M_lmxI-unsplash.jpg" alt="Photo by Spencer Watson" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Photo by Spencer Watson</strong>
+                            <span>Trees</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card trees plants">
+                        <a class="gallery-image" href="assets/img/trees/victoria-palacios-dfo06_DqxpA-unsplash.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/trees/victoria-palacios-dfo06_DqxpA-unsplash.jpg" alt="Photo by Victoria Palacios" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Photo by Victoria Palacios</strong>
+                            <span>Trees</span>
+                        </div>
+                    </article>
+
+                    <!-- BIRDS -->
+                    <article class="gallery-card birds animals">
+                        <a class="gallery-image" href="assets/img/birds/bald-eagle.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/birds/bald-eagle.jpg" alt="Bald Eagle" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Bald Eagle</strong>
+                            <span>Birds</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card birds animals">
+                        <a class="gallery-image" href="assets/img/birds/blue-jay.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/birds/blue-jay.jpg" alt="Blue Jay" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Blue Jay</strong>
+                            <span>Birds</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card birds animals">
+                        <a class="gallery-image" href="assets/img/birds/flamingo.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/birds/flamingo.jpg" alt="Flamingo" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Flamingo</strong>
+                            <span>Birds</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card birds animals">
+                        <a class="gallery-image" href="assets/img/birds/kingfisher.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/birds/kingfisher.jpg" alt="Kingfisher" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Kingfisher</strong>
+                            <span>Birds</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card birds animals">
+                        <a class="gallery-image" href="assets/img/birds/penguin.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/birds/penguin.jpg" alt="Penguin" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Penguin</strong>
+                            <span>Birds</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card birds animals">
+                        <a class="gallery-image" href="assets/img/birds/robin.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/birds/robin.jpg" alt="Robin" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Robin</strong>
+                            <span>Birds</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card birds animals">
+                        <a class="gallery-image" href="assets/img/birds/scarlet-macaw.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/birds/scarlet-macaw.jpg" alt="Scarlet Macaw" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Scarlet Macaw</strong>
+                            <span>Birds</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card birds animals">
+                        <a class="gallery-image" href="assets/img/birds/snowy-owl.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/birds/snowy-owl.jpg" alt="Snowy Owl" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Snowy Owl</strong>
+                            <span>Birds</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card birds animals">
+                        <a class="gallery-image" href="assets/img/birds/toucan.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/birds/toucan.jpg" alt="Toucan" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Toucan</strong>
+                            <span>Birds</span>
+                        </div>
+                    </article>
+
+                    <!-- FISHES -->
+                    <!-- FISHES -->
+<article class="gallery-card fishes animals">
+    <a class="gallery-image" href="assets/img/fishes/blazenek-scaled.jpg" target="_blank" rel="noopener">
+        <img src="assets/img/fishes/blazenek-scaled.jpg" alt="Clownfish" loading="lazy">
+        <span class="image-open" aria-hidden="true">&nearrow;</span>
+    </a>
+    <div class="gallery-caption">
+        <strong>Clownfish</strong>
+        <span>Fishes</span>
+    </div>
+</article>
+
+<article class="gallery-card fishes animals">
+    <a class="gallery-image" href="assets/img/fishes/Fish-Lionfish-Lion-fish-Turkey-fish-Red-lionfish.webp" target="_blank" rel="noopener">
+        <img src="assets/img/fishes/Fish-Lionfish-Lion-fish-Turkey-fish-Red-lionfish.webp" alt="Lionfish" loading="lazy">
+        <span class="image-open" aria-hidden="true">&nearrow;</span>
+    </a>
+    <div class="gallery-caption">
+        <strong>Lionfish</strong>
+        <span>Fishes</span>
+    </div>
+</article>
+
+<article class="gallery-card fishes animals">
+    <a class="gallery-image" href="assets/img/fishes/images (1).jfif" target="_blank" rel="noopener">
+        <img src="assets/img/fishes/images (1).jfif" alt="Tilapia" loading="lazy">
+        <span class="image-open" aria-hidden="true">&nearrow;</span>
+    </a>
+    <div class="gallery-caption">
+        <strong>Tilapia</strong>
+        <span>Fishes</span>
+    </div>
+</article>
+
+<article class="gallery-card fishes animals">
+    <a class="gallery-image" href="assets/img/fishes/images.jfif" target="_blank" rel="noopener">
+        <img src="assets/img/fishes/images.jfif" alt="Angelfish" loading="lazy">
+        <span class="image-open" aria-hidden="true">&nearrow;</span>
+    </a>
+    <div class="gallery-caption">
+        <strong>Angelfish</strong>
+        <span>Fishes</span>
+    </div>
+</article>
+
+<article class="gallery-card fishes animals">
+    <a class="gallery-image" href="assets/img/fishes/largemouth_bass_robert_pos_flickr.jpg" target="_blank" rel="noopener">
+        <img src="assets/img/fishes/largemouth_bass_robert_pos_flickr.jpg" alt="Largemouth Bass" loading="lazy">
+        <span class="image-open" aria-hidden="true">&nearrow;</span>
+    </a>
+    <div class="gallery-caption">
+        <strong>Largemouth Bass</strong>
+        <span>Fishes</span>
+    </div>
+</article>
+
+<article class="gallery-card fishes animals">
+    <a class="gallery-image" href="assets/img/fishes/Porcupine-fish-Diodon-hystox.webp" target="_blank" rel="noopener">
+        <img src="assets/img/fishes/Porcupine-fish-Diodon-hystox.webp" alt="Porcupinefish" loading="lazy">
+        <span class="image-open" aria-hidden="true">&nearrow;</span>
+    </a>
+    <div class="gallery-caption">
+        <strong>Porcupinefish</strong>
+        <span>Fishes</span>
+    </div>
+</article>
+
+<article class="gallery-card fishes animals">
+    <a class="gallery-image" href="assets/img/fishes/shutterstock_417478_orange_goldfish.webp" target="_blank" rel="noopener">
+        <img src="assets/img/fishes/shutterstock_417478_orange_goldfish.webp" alt="Goldfish" loading="lazy">
+        <span class="image-open" aria-hidden="true">&nearrow;</span>
+    </a>
+    <div class="gallery-caption">
+        <strong>Goldfish</strong>
+        <span>Fishes</span>
+    </div>
+</article>
+
+<article class="gallery-card fishes animals">
+    <a class="gallery-image" href="assets/img/fishes/sun-fish-pond-fish.jpg" target="_blank" rel="noopener">
+        <img src="assets/img/fishes/sun-fish-pond-fish.jpg" alt="Sunfish" loading="lazy">
+        <span class="image-open" aria-hidden="true">&nearrow;</span>
+    </a>
+    <div class="gallery-caption">
+        <strong>Sunfish</strong>
+        <span>Fishes</span>
+    </div>
+</article>
+
+<article class="gallery-card fishes animals">
+    <a class="gallery-image" href="assets/img/fishes/top-10-colorful-fish-to-brighten-up-your-next-freshwater-aquarium-3560267.webp" target="_blank" rel="noopener">
+        <img src="assets/img/fishes/top-10-colorful-fish-to-brighten-up-your-next-freshwater-aquarium-3560267.webp" alt="Colorful Freshwater Fish" loading="lazy">
+        <span class="image-open" aria-hidden="true">&nearrow;</span>
+    </a>
+    <div class="gallery-caption">
+        <strong>Colorful Freshwater Fish</strong>
+        <span>Fishes</span>
+    </div>
+</article>
+			<!-- FRUITS -->
+                    <article class="gallery-card fruits plants">
+                        <a class="gallery-image" href="assets/img/fruits/9c258525e4eb471d29b3c0a2c22d000b.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/fruits/9c258525e4eb471d29b3c0a2c22d000b.jpg" alt="Fresh red apple" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Red Apple</strong>
+                            <span>Fruits</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card fruits plants">
+                        <a class="gallery-image" href="assets/img/fruits/827c44b706d30d9d432776fab3ee998c.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/fruits/827c44b706d30d9d432776fab3ee998c.jpg" alt="Fresh ripe mango" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Mango</strong>
+                            <span>Fruits</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card fruits plants">
+                        <a class="gallery-image" href="assets/img/fruits/images (4).jfif" target="_blank" rel="noopener">
+                            <img src="assets/img/fruits/images (4).jfif" alt="Bunch of fresh bananas" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Bananas</strong>
+                            <span>Fruits</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card fruits plants">
+                        <a class="gallery-image" href="assets/img/fruits/img_4667.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/fruits/img_4667.jpg" alt="Fresh green peas" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Green Peas</strong>
+                            <span>Fruits</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card fruits plants">
+                        <a class="gallery-image" href="assets/img/fruits/photo-1770934602716-865bd35bdaf3.avif" target="_blank" rel="noopener">
+                            <img src="assets/img/fruits/photo-1770934602716-865bd35bdaf3.avif" alt="Sliced dragon fruit" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Dragon Fruit</strong>
+                            <span>Fruits</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card fruits plants">
+                        <a class="gallery-image" href="assets/img/fruits/Pineapple_'Victoria'_with_slice.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/fruits/Pineapple_'Victoria'_with_slice.jpg" alt="Fresh pineapple with slice" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Pineapple</strong>
+                            <span>Fruits</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card fruits plants">
+                        <a class="gallery-image" href="assets/img/fruits/The_jackfruit_is_holding_on_to_the_tree.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/fruits/The_jackfruit_is_holding_on_to_the_tree.jpg" alt="Jackfruit on tree" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Jackfruit</strong>
+                            <span>Fruits</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card fruits plants">
+                        <a class="gallery-image" href="assets/img/fruits/top-hydrating-fruits-watermelon-1440x810.webp" target="_blank" rel="noopener">
+                            <img src="assets/img/fruits/top-hydrating-fruits-watermelon-1440x810.webp" alt="Fresh sliced watermelon" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Watermelon</strong>
+                            <span>Fruits</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card fruits plants">
+                        <a class="gallery-image" href="assets/img/fruits/1702934646286.webp" target="_blank" rel="noopener">
+                            <img src="assets/img/fruits/1702934646286.webp" alt="Fresh durian fruit" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Durian</strong>[cite: 21]
+                            <span>Fruits</span>
+                        </div>
+                    </article>
+                    <!-- FLOWERS -->
+                    <article class="gallery-card flowers plants">
+                        <a class="gallery-image" href="assets/img/flowers/beebalm-6604652_1280-940x550.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/flowers/beebalm-6604652_1280-940x550.jpg" alt="Purple beebalm flower" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Beebalm Flower</strong>
+                            <span>Flowers</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card flowers plants">
+                        <a class="gallery-image" href="assets/img/flowers/bright-nasturtium-flowers-royalty-free-image-1705683448.avif" target="_blank" rel="noopener">
+                            <img src="assets/img/flowers/bright-nasturtium-flowers-royalty-free-image-1705683448.avif" alt="Bright nasturtium flowers" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Bright Nasturtium Flowers</strong>
+                            <span>Flowers</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card flowers plants">
+                        <a class="gallery-image" href="assets/img/flowers/dahlia-1508785047.avif" target="_blank" rel="noopener">
+                            <img src="assets/img/flowers/dahlia-1508785047.avif" alt="Pink dahlia flower" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Pink Dahlia</strong>
+                            <span>Flowers</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card flowers plants">
+                        <a class="gallery-image" href="assets/img/flowers/images (1).jfif" target="_blank" rel="noopener">
+                            <img src="assets/img/flowers/images (1).jfif" alt="White daisy flower" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>White Daisy</strong>
+                            <span>Flowers</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card flowers plants">
+                        <a class="gallery-image" href="assets/img/flowers/images (2).jfif" target="_blank" rel="noopener">
+                            <img src="assets/img/flowers/images (2).jfif" alt="Yellow flowers against blue sky" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Yellow Flowers</strong>
+                            <span>Flowers</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card flowers plants">
+                        <a class="gallery-image" href="assets/img/flowers/images (3).jfif" target="_blank" rel="noopener">
+                            <img src="assets/img/flowers/images (3).jfif" alt="Blue plumbago flowers" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Blue Plumbago</strong>
+                            <span>Flowers</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card flowers plants">
+                        <a class="gallery-image" href="assets/img/flowers/images.jfif" target="_blank" rel="noopener">
+                            <img src="assets/img/flowers/images.jfif" alt="Purple lilac blossoms" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Lilac Blossoms</strong>
+                            <span>Flowers</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card flowers plants">
+                        <a class="gallery-image" href="assets/img/flowers/White-Trillium-Flower.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/flowers/White-Trillium-Flower.jpg" alt="Photo by Ryan Hagerty, USFWS" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Photo by Ryan Hagerty, USFWS</strong>[cite: 11]
+                            <span>Flowers</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card flowers plants">
+                        <a class="gallery-image" href="assets/img/flowers/tulip.avif" target="_blank" rel="noopener">
+                            <img src="assets/img/flowers/tulip.avif" alt="Red and yellow tulips" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Tulips</strong>
+                            <span>Flowers</span>
+                        </div>
+                    </article>
+                    <!-- MAMMALS -->
+                    <article class="gallery-card mammals animals">
+                        <a class="gallery-image" href="assets/img/mammals/bear.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/mammals/bear.jpg" alt="Bear" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Bear</strong>
+                            <span>Mammals</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card mammals animals">
+                        <a class="gallery-image" href="assets/img/mammals/deer.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/mammals/deer.jpg" alt="Deer" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Deer</strong>
+                            <span>Mammals</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card mammals animals">
+                        <a class="gallery-image" href="assets/img/mammals/elephant.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/mammals/elephant.jpg" alt="Elephant" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Elephant</strong>
+                            <span>Mammals</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card mammals animals">
+                        <a class="gallery-image" href="assets/img/mammals/fox.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/mammals/fox.jpg" alt="Fox" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Fox</strong>
+                            <span>Mammals</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card mammals animals">
+                        <a class="gallery-image" href="assets/img/mammals/giraffe.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/mammals/giraffe.jpg" alt="Giraffe" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Giraffe</strong>
+                            <span>Mammals</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card mammals animals">
+                        <a class="gallery-image" href="assets/img/mammals/lion.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/mammals/lion.jpg" alt="Lion" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Lion</strong>
+                            <span>Mammals</span>
+                        </div>
+                    </article>
+
+                    <article class="gallery-card mammals animals">
+                        <a class="gallery-image" href="assets/img/mammals/zebra.jpg" target="_blank" rel="noopener">
+                            <img src="assets/img/mammals/zebra.jpg" alt="Zebra" loading="lazy">
+                            <span class="image-open" aria-hidden="true">&nearrow;</span>
+                        </a>
+                        <div class="gallery-caption">
+                            <strong>Zebra</strong>
+                            <span>Mammals</span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <span>Designed as a personal learning portfolio.</span>
+                <span>Caine Wesley Francisco &middot; Ken</span>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- GALLERY FILTER JAVASCRIPT -->
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const galleryCards = document.querySelectorAll('.gallery-card');
+        const galleryCount = document.getElementById('gallery-count');
+
+        filterButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const selectedFilter = button.dataset.filter;
+                let visibleCount = 0;
+
+                filterButtons.forEach((item) => {
+                    const isActive = item === button;
+
+                    item.classList.toggle('active', isActive);
+                    item.setAttribute('aria-pressed', String(isActive));
+                });
+
+                galleryCards.forEach((card) => {
+                    const shouldShow =
+                        selectedFilter === 'all' ||
+                        card.classList.contains(selectedFilter);
+
+                    card.hidden = !shouldShow;
+
+                    if (shouldShow) {
+                        visibleCount++;
+                    }
+                });
+
+                galleryCount.textContent =
+                    selectedFilter === 'all'
+                        ? `Showing all ${visibleCount} photographs`
+                        : `Showing ${visibleCount} ${selectedFilter} photographs`;
+            });
+        });
+    </script>
+
+</body>
+</html>
